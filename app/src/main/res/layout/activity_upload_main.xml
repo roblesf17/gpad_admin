@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="16dp"
+    tools:context=".UPLOAD_main"
+    android:orientation="vertical"
+
+    android:background="@drawable/fondo_login"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar Nuevo Tramite"
+                android:textSize="22dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                ></TextView>
+
+            <!--INICIO CARDVIEW-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="10dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <EditText
+                        android:id="@+id/edit_text_file_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@+id/button_choose_image"
+                        android:hint="Titulo del Tramite"
+                        android:textColor="@android:color/white"
+                        ></EditText>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--FIN DE CARDVIEW-->
+
+            <!--INICIO CARDVIEW-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="10dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edit_text_description_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_toEndOf="@+id/button_choose_image"
+                        android:hint="Descripcion del Tramite">
+
+                    </EditText>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--FIN DE CARDVIEW-->
+
+            <!--INICIO CARDVIEW-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="10dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button_choose_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abrir Galeria"
+                        android:gravity="center"
+                        android:background="@drawable/boton_redondo"
+                        android:textColor="@android:color/white"
+                        ></Button>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--FIN DE CARDVIEW-->
+
+            <!--INICIO CARDVIEW-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="10dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="416dp"
+                        android:layout_above="@+id/progress_bar">
+
+                    </ImageView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--FIN DE CARDVIEW-->
+
+            <!--INICIO CARDVIEW-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="10dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/button_upload"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="16dp"
+
+                        ></ProgressBar>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--FIN DE CARDVIEW-->
+
+
+            <!--INICIO CARDVIEW-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="10dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_centerHorizontal="true"
+
+                        android:background="@drawable/boton_redondo"
+
+                        android:textColor="@android:color/white"
+
+                        android:text="Guardar Cambios"></Button>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+            <!--FIN DE CARDVIEW-->
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/text_view_show_uploads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button_upload"
+
+                android:layout_alignBottom="@+id/button_upload"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/button_upload"
+                android:gravity="center"
+                android:text=""
+
+                android:textSize="16sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

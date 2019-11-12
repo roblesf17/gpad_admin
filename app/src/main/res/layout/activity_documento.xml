@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Documento"
+
+
+    android:padding="20dp"
+    android:orientation="vertical"
+    >
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+
+            android:id="@+id/txt_titulo_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingTop="12dp"
+            android:text="Agregar Documento"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/fondo_color_principal"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulo">
+
+        <EditText
+            android:id="@+id/txt_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="12dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripcion">
+
+        <EditText
+            android:id="@+id/txt_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="12dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Imagen URL">
+
+        <EditText
+            android:id="@+id/txt_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="12dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+
+        android:paddingTop="70dp">
+
+        <Button
+            android:id="@+id/btnRegistrarDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRAR"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:onClick="onclickRegistrarDocumento"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DialogFlowGpadAdmin</string>
+    <string name="title_activity_principal">Menu Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Acerca de ...</string>
+
+    <string name="menu_home">Añadir Usuario</string>
+    <string name="menu_gallery">Nuevo Tramite</string>
+    <string name="menu_slideshow">Ver Tramites</string>
+    <string name="menu_tools">Chat Boot</string>
+    <string name="menu_share">DialogFlow</string>
+    <string name="menu_send">Cerrar Sesion</string>
+</resources>
